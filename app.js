@@ -1,7 +1,8 @@
 const profileDataArgs = process.argv.slice(2, process.argv.length);
 
 const [name, github] = profileDataArgs;
-
+console.log(profileDataArgs);
+console.log(name, github);
 
 const generatePage = (name, github) => {   
     return `
@@ -21,5 +22,6 @@ const generatePage = (name, github) => {
     </body>
     </html>
     `;
-    
+   
 };
+console.log(generatePage(name, github));
